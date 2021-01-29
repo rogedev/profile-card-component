@@ -1,0 +1,25 @@
+@import url("normalize.css");
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background:
+        url(../images/bg-pattern-top.svg) no-repeat right 50vw bottom 50vh,
+        url(../images/bg-pattern-bottom.svg) no-repeat left 50vw top 50vh;
+    align-items: center;
+}
+
+.card {
+    margin: 5rem auto 5rem auto;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    background:
+        url(../images/bg-pattern-card.svg) no-repeat top;
+}
+
+.card-user-social {
+    display: flex;
+    flex-direction: row;
+}
