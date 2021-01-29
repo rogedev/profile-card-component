@@ -6,20 +6,41 @@ body {
     height: 100vh;
     background:
         url(../images/bg-pattern-top.svg) no-repeat right 50vw bottom 50vh,
-        url(../images/bg-pattern-bottom.svg) no-repeat left 50vw top 50vh;
-    align-items: center;
+        url(../images/bg-pattern-bottom.svg) no-repeat left 50vw top 50vh
+          hsl(185, 75%, 39%);
+          justify-content: center;
+    font-family: 'Kumbh Sans', sans-serif;
 }
 
 .card {
+  overflow: hidden;
+    max-width: 700px;
     margin: 5rem auto 5rem auto;
-    max-width: 600px;
     display: flex;
     flex-direction: column;
     background:
-        url(../images/bg-pattern-card.svg) no-repeat top;
+        url(../images/bg-pattern-card.svg) no-repeat top
+        #fff;
+    border-radius: 2rem;
+}
+.card-user-img img{
+  border-radius: 50%;
+  border:5px solid #fff;
+  position: relative;
+  align-items: center;
 }
 
 .card-user-social {
     display: flex;
     flex-direction: row;
+}
+.name,
+.stats-number{
+  color:  hsl(229, 23%, 23%);
+  font-weight: 700;
+}
+.age,
+.city
+.stats-name{
+  font-weight: 400;
 }
